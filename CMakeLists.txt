@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.16...3.28 FATAL_ERROR)
 
 project(craft)
 
@@ -39,7 +39,7 @@ if(APPLE)
 endif()
 
 if(UNIX)
-    target_link_libraries(craft dl glfw
+    target_link_libraries(craft dl glfw GL
         ${GLFW_LIBRARIES} ${CURL_LIBRARIES})
 endif()
 
