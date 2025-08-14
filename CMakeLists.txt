@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.16...3.28 FATAL_ERROR)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(craft)
 
